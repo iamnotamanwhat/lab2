@@ -34,8 +34,6 @@ nav {
     align-items: center;
   }
 
-  
-
   nav {
     flex-direction: row;
     gap: 20px;

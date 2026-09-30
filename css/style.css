@@ -1,10 +1,12 @@
+/* UNIVERSAL RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #643535;
+  color: #b85858;
 }
 
+/* MOBILE-FIRST LAYOUT */
 header, .card-grid {
   display: flex;
   flex-direction: column;
@@ -15,19 +17,25 @@ nav {
   flex-direction: column;
 }
 
+/* CARD BASE STYLE */
 .card {
   flex-basis: 100%;
+  background-color: hsl(199, 100%, 89%);
   padding: 10px;
   margin-bottom: 10px;
+  border-radius: 6px;
+  transition: 0.3s ease; /* prepares for hover animation */
 }
 
+/* REQUIRED HOVER INTERACTION */
 .card:hover {
-  box-shadow: 0 4px 12px rgb(108, 28, 28);
-  transition: 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transform: translateY(-4px);
 }
 
-
+/* DESKTOP VIEW (>= 768px) */
 @media (min-width: 768px) {
+
   header {
     flex-direction: row;
     justify-content: space-between;
@@ -51,6 +59,7 @@ nav {
   }
 }
 
+/* FOOTER */
 footer {
   text-align: center;
   background-color: #3333333b;

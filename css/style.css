@@ -1,3 +1,60 @@
- * {
-     margin: 0; padding: 0; box-sizing: border-box;
- }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #643535;
+}
+
+header, .card-grid {
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  flex-basis: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgb(108, 28, 28);
+  transition: 0.3s ease;
+}
+
+
+@media (min-width: 768px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  
+
+  nav {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .card-grid {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .card {
+    flex-basis: 30%;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+footer {
+  text-align: center;
+  background-color: #3333333b;
+  padding: 10px;
+}
